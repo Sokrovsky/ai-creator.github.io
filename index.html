@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniil Ivanov — AI Video Creator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">DI.</div>
+  <a href="https://t.me/ds_tq" target="_blank" class="tg">Telegram ↗</a>
+</header>
+
+<section class="hero">
+<video autoplay muted loop playsinline class="hero-video">
+<source src="videos/hero.mp4" type="video/mp4">
+</video>
+<div class="overlay"></div>
+
+<div class="hero-content">
+<h1>Daniil<br>Ivanov</h1>
+<h2>AI Video Creator<br>& Creative Producer</h2>
+<p>Создаю рекламные ролики, AI-контент и визуальные концепции для брендов, медиа и digital-проектов.</p>
+<a href="#portfolio" class="btn">Смотреть портфолио ↓</a>
+</div>
+</section>
+
+<section id="portfolio" class="portfolio">
+<h3 class="section-title">Портфолио</h3>
+
+<div class="portfolio-grid">
+<div class="card wide" data-video="videos/automotive.mp4">
+<img src="images/automotive.jpg"><div class="grad"></div>
+<div class="title">Автомобильная реклама <span>→</span></div>
+</div>
+
+<div class="card" data-video="videos/retail.mp4">
+<img src="images/retail.jpg"><div class="grad"></div>
+<div class="title">Реклама товаров <span>→</span></div>
+</div>
+
+<div class="card" data-video="videos/fragrance.mp4">
+<img src="images/fragrance.jpg"><div class="grad"></div>
+<div class="title">Парфюмерия <span>→</span></div>
+</div>
+
+<div class="card" data-video="videos/fusion.mp4">
+<img src="images/fusion.jpg"><div class="grad"></div>
+<div class="title">Fusion <span>→</span></div>
+</div>
+
+<div class="card" data-video="videos/storytelling.mp4">
+<img src="images/storytelling.jpg"><div class="grad"></div>
+<div class="title">История <span>→</span></div>
+</div>
+
+<div class="card wide" data-video="videos/cinematic.mp4">
+<img src="images/cinematic.jpg"><div class="grad"></div>
+<div class="title">Авторские концепции <span>→</span></div>
+</div>
+</div>
+</section>
+
+<section class="metrics">
+<div><span>100 000+</span><small>Подписчиков Telegram-проекта</small></div>
+<div><span>2,5 млн+</span><small>Подписчиков Instagram-проекта</small></div>
+<div><span>5+</span><small>Лет опыта в маркетинге и контенте</small></div>
+<div><span>50+</span><small>AI-проектов</small></div>
+</section>
+
+<div class="nda">ⓘ Некоторые коммерческие проекты не представлены в портфолио из-за NDA.</div>
+
+<a href="https://t.me/ds_tq" target="_blank">
+<footer class="contact-card">
+<h3>Готов обсудить проект</h3>
+<a href="https://t.me/ds_tq" target="_blank">Telegram ↗</a>
+</footer></a>
+
+<div class="modal" id="modal">
+<div class="modal-box">
+<span id="close">×</span>
+<video id="video" controls></video>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

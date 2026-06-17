@@ -1,0 +1,52 @@
+
+@font-face{
+font-family:Inter;
+src:url('fonts/Inter.ttf') format('truetype');
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#090909;color:#fff;font-family:Inter,sans-serif}
+.topbar{position:fixed;top:0;width:100%;padding:28px 42px;display:flex;justify-content:space-between;z-index:10}
+.logo,.tg{text-decoration:none;color:#fff}
+.hero{height:100vh;position:relative;display:flex;align-items:center}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.overlay{position:absolute;inset:0;background:rgba(0,0,0,.55)}
+.hero-content{position:relative;max-width:720px;margin-left:8vw}
+.hero-content h1{font-size:128px;line-height:.88;letter-spacing:-.06em;font-weight:500}
+.hero-content h2{font-size:34px;margin:28px 0;font-weight:400}
+.hero-content p{font-size:20px;line-height:1.6;max-width:620px;color:#f0f0f0}
+.btn{display:inline-block;margin-top:30px;color:#fff;text-decoration:none}
+
+.portfolio{max-width:1400px;margin:auto;padding:100px 24px}
+.section-title{text-align:center;margin-bottom:40px;font-size:34px}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;cursor:pointer}
+.wide{grid-column:span 2}
+.card img{width:100%;height:100%;object-fit:cover}
+.grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.95),rgba(0,0,0,.55),transparent)}
+.title{position:absolute;left:22px;right:22px;bottom:18px;display:flex;justify-content:space-between;font-size:22px}
+.card:hover{transform:scale(1.02);transition:.3s}
+
+.metrics{max-width:1400px;margin:70px auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:0 24px}
+.metrics div{background:#121212;border-radius:24px;padding:24px;min-height:170px}
+.metrics span{font-size:42px;font-weight:700}
+.metrics small{display:block;margin-top:10px;color:#aaa}
+
+.nda{max-width:1400px;margin:auto;padding:0 24px;color:#888}
+.contact-card{max-width:1400px;margin:50px auto;padding:40px;background:#121212;border-radius:24px;display:flex;justify-content:space-between;align-items:center}
+.contact-card a{color:#fff;text-decoration:none}
+
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.94);justify-content:center;align-items:center}
+.modal-box{width:min(1100px,95vw)}
+.modal video{width:100%}
+#close{font-size:40px;cursor:pointer;float:right}
+
+@media(max-width:900px){
+.hero-content{margin:0 24px}
+.hero-content h1{font-size:128px;line-height:.88;letter-spacing:-.06em;font-weight:500}
+.hero-content h2{font-size:34px;margin:28px 0;font-weight:400}
+.portfolio-grid,.metrics{grid-template-columns:1fr}
+.wide{grid-column:auto}
+.contact-card{flex-direction:column;gap:20px}
+}
+
+.modal video{width:100%;max-height:90vh;object-fit:contain}.modal{display:none;}
